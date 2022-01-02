@@ -25,6 +25,8 @@ That is why we would like to build a website that can help people find ways to i
 - Twilio
 - Linode
 - AI
+- Go Daddy
+- Domain.com
 
 ## Challenges we ran into
 We had challenges to integrate the backend and frontend and make sure everything works fine. We had errors when adding new items to the backend but we were able to resolve the issues. 
