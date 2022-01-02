@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <h1>Book Suggestions for Better Life Improvement</h1>
+
+        <div class="content">
+
+            <form id="add-book-form">
+                <input type="text" name="book" placeholder="Book name">
+                <input type="text" name="topic" placeholder="Topic">
+                <button>Add Book</button>
+            </form>
+
+            <ul id="book-list"></ul>
+
+        </div>
+
+        <script>
+            // Initialize Firebase
+            var config = {
+            
+            };
+            firebase.initializeApp(config);
+            const db = firebase.firestore();
+            db.settings({ timestampsInSnapshots: true }); 
+        </script>
+        <script src="app.js"></script>
+    </body>
+</html>

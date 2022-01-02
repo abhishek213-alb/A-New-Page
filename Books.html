@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Static/css/Books.css"/>
+    <link rel="shortcut icon" href="https://st.depositphotos.com/2131499/4517/v/950/depositphotos_45174379-stock-illustration-library-icon.jpg">
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Share your Books</title>
+  </head>
+  <body>
+    <header><h1 class="title">Share your favorite books with friends
+    </h1></header>
+
+    <!-- Journal Entry Section -->
+    <section class="section journal-section">
+      <div class="container">
+        <div class="container-row container-row-journal">
+          <div class="container-item container-item-journal">
+            <form id="entryForm" action="">
+              <label for="entry-title" class="journal-label">Enter  Mail Id</label>
+              <input
+                type="text"
+                name="entry-title"
+                id="entry-title"
+                class="entry-text-title"
+                placeholder="Enter mail Id 📧"
+              />
+              <label for="entry" class="journal-label">Enter Book Name</label>
+              <textarea
+                name="daily-entry"
+                id="entry"
+                class="entry-text-box"
+                placeholder="Share your books🎁 "
+              ></textarea>
+              <button class="btn-main entry-submit-btn" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mail sent Status Js -->
+    <section class="section sectionEntryResults" id="entryResultsSection">
+      <div class="container">
+        <div class="container-row entryResultRow"></div>
+      </div>
+    </section>
+
+    <script src="/Static/js/Books.js"></script>
+  </body>
+</html>
